@@ -1,0 +1,127 @@
+body {
+    color: #594a4e;
+    background-color: #fffffe;
+}
+header {
+    color: #fffffe;
+    background-color: #76a79c;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 2% 5%;
+}
+nav ul {
+    display: flex;
+    /* space-around : 各項目の周りに均等なスペースを設ける（端にもスペースあり */
+    /* space-between : 両端の項目は左右に寄せる */
+    /* space-evenly : 端のスペースも均等 */
+    justify-content: space-around;
+}
+h2 {
+    color: #33272a;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0 10px;
+
+}
+h2::first-letter {
+    font-size: 1.8em;
+    color: #df9478;
+    margin: 3px;
+}
+h3 {
+    font-size: 1.3em;
+    text-align: center;
+}
+.bold {
+    font-weight: bold;
+}
+img {
+    width: 30%;
+    height: auto;
+}
+.center {
+    text-align: center;
+    font-weight: bold;
+}
+#typing-game {
+    font-weight: bold;
+    background-color: #fffffe;
+    padding: 3% 10px;
+    margin: 1%;
+    border: solid 2px #76a79c;
+    border-radius: 5px;
+}
+
+section {
+    padding: 10px;
+}
+section p {
+    padding: 0 15px;
+}
+#Q_List {
+    background-color: #fffffe;
+    border: solid 2px #76a79c;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+input[type="number"] {
+    background-color: #fffffe;
+    border: solid 2px #76a79c;
+    border-radius: 3px;
+    width: 100px;
+    padding: 0 5px;
+}
+
+input[type="button"] {
+    color: white;
+    background-color: #df9478;
+    /* radius : 角を丸くする */
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 7px 15px;
+    margin: 5px 20px;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 0 #a25d44;
+}
+input[type="button"]:hover {
+    color: white;
+    background-color: #f3a082;
+    /* transform: translateY(-2px); */
+}
+input[type="button"]:active {
+    color: white;
+    background-color: #b4d0d0;
+    /* 下に下げて押し込むように見せる */
+    transform: translateY(-2px);
+    box-shadow: 0 2px 0 #92b0b0;
+}
+
+
+input[type="text"] {
+    background-color: #fffffe;
+    border: solid 2px #76a79c;
+    border-radius: 5px;
+    width: 200px;
+    padding: 0 5px;
+}
+select {
+    background-color: #fffffe;
+    border: solid 2px #76a79c;
+    border-radius: 3px;
+    width: 200px;
+    padding: 0 5px;
+}
+::placeholder {
+    /* opacity : 不透明度 */
+    opacity: 0.5;
+}
+
+
+footer {
+    color: white;
+    background-color: black;
+    font-size: 0.5em;
+    text-align: center;
+}

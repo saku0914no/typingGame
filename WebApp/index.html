@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typing game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body onload="koushin()">
+    <script>
+
+    </script>
+
+    <header>
+        <h1>aaa</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>今日の日付 <span id="real-time"></span></h2>
+            <p class="center">▼▼ タイピングゲーム ▼▼</p>
+            <div id="typing-game">
+                <h3 id="start"></h3>
+                <h3 id="hantei"></h3>
+                <h3 id="startButton">
+                    <input type="button" value="ゲームスタート" onclick="startGame()">
+                </h3>
+            </div>
+            
+            <input type="button" value="初期表示／保存データのリセット" onclick="LS()">
+        </section>
+
+        <section>
+            <h2>問題数変更</h2>
+            <p>
+                現在の問題数：<span id="step"></span>問
+                <br>
+                <span class="bold">問題数変更 ▶▶ </span>
+                <!-- <input id="NoQ" type="range" min="5" max="200" value="10"> -->
+                <input id="NoQ" type="number" value="10">
+                <input type="button" value="問題数変更" onclick="NQ()">
+            </p>
+        </section>
+
+        <section>
+            <h2>問題リスト</h2>
+            <p>
+                ※半角英数字のみ対応
+                <br>
+                <span class="bold">問題追加 ▶▶ </span>
+                <input id="input_list" type="text" placeholder="単語を入力">
+                <input type="button" value="問題追加" onclick="input_Q()">
+            </p>
+            <p id="Q_List"></p>
+        </section>
+        
+        <section>
+            <h2>問題削除</h2>
+            <p>
+                <span class="bold">削除 ▶▶ </span>
+                <select id='delete_list'></select>
+                </span>
+                <input type="button" value="問題削除" onclick="delete_Q()">
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024年度</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
