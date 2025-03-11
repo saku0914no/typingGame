@@ -1,7 +1,7 @@
 # タイピングゲーム
 
 ## 参考にしたサイト
-- [JavaScript入門講座｜タイピングゲームを作ろう] （https://janken.asotetu.work/js_tip/）
+- [JavaScript入門講座｜タイピングゲームを作ろう] (https://janken.asotetu.work/js_tip/)
 - 2025年1月30日閲覧
 
 ## 使用したリソース
